@@ -1,0 +1,157 @@
+2020-09-25 13:35:08,802:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-25 13:35:09,179:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-25 14:02:18,210:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-25 14:30:24,993:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-25 14:31:03,976:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-25 14:33:03,053:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-25 14:36:31,082:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-25 14:36:56,051:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-25 14:40:39,271:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-25 14:43:14,019:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-25 14:48:13,808:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-25 14:51:36,187:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-25 14:51:52,315:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-25 14:52:21,982:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-25 14:53:11,425:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-25 14:54:01,709:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-25 15:30:22,881:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-25 18:35:17,201:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-25 18:36:17,096:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-25 18:47:55,471:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-25 18:53:56,571:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-25 18:54:40,201:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-25 18:56:02,974:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-25 18:56:40,705:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-25 18:56:57,398:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-25 18:58:01,468:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-25 19:16:43,482:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-25 19:17:28,615:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-26 01:56:25,445:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-26 02:51:44,456:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-26 06:14:18,728:WARNING:discord.gateway: Heartbeat blocked for more than 5 seconds.
+2020-09-26 06:15:04,101:WARNING:discord.gateway: Shard ID None has stopped responding to the gateway. Closing and restarting.
+2020-09-26 06:16:47,153:ERROR:discord.ext.tasks: Internal background task failed.
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/websockets/protocol.py", line 827, in transfer_data
+    message = await self.read_message()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/websockets/protocol.py", line 895, in read_message
+    frame = await self.read_data_frame(max_size=self.max_size)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/websockets/protocol.py", line 971, in read_data_frame
+    frame = await self.read_frame(max_size)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/websockets/protocol.py", line 1047, in read_frame
+    frame = await Frame.read(
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/websockets/framing.py", line 105, in read
+    data = await reader(2)
+  File "/usr/lib/python3.8/asyncio/streams.py", line 723, in readexactly
+    await self._wait_for_data('readexactly')
+  File "/usr/lib/python3.8/asyncio/streams.py", line 517, in _wait_for_data
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/tasks/__init__.py", line 73, in _loop
+    await self.coro(*args, **kwargs)
+  File "main.py", line 41, in change_status
+    await bot.change_presence(activity=discord.Game(next(status)))
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/client.py", line 943, in change_presence
+    await self.ws.change_presence(activity=activity, status=status, afk=afk)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/gateway.py", line 512, in change_presence
+    await self.send(sent)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/gateway.py", line 482, in send
+    await super().send(data)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/websockets/protocol.py", line 555, in send
+    await self.ensure_open()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/websockets/protocol.py", line 803, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedError: code = 1006 (connection closed abnormally [internal]), no reason
+2020-09-26 06:17:22,855:ERROR:discord.client: Attempting a reconnect in 1.14s
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/websockets/protocol.py", line 827, in transfer_data
+    message = await self.read_message()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/websockets/protocol.py", line 895, in read_message
+    frame = await self.read_data_frame(max_size=self.max_size)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/websockets/protocol.py", line 971, in read_data_frame
+    frame = await self.read_frame(max_size)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/websockets/protocol.py", line 1047, in read_frame
+    frame = await Frame.read(
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/websockets/framing.py", line 105, in read
+    data = await reader(2)
+  File "/usr/lib/python3.8/asyncio/streams.py", line 723, in readexactly
+    await self._wait_for_data('readexactly')
+  File "/usr/lib/python3.8/asyncio/streams.py", line 517, in _wait_for_data
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/gateway.py", line 470, in poll_event
+    msg = await self.recv()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/websockets/protocol.py", line 509, in recv
+    await self.ensure_open()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/websockets/protocol.py", line 812, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedError: code = 1006 (connection closed abnormally [internal]), no reason
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/client.py", line 463, in _connect
+    await self.ws.poll_event()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/gateway.py", line 475, in poll_event
+    raise ResumeWebSocket(self.shard_id) from exc
+discord.gateway.ResumeWebSocket: None
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/client.py", line 499, in connect
+    await self._connect()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/client.py", line 469, in _connect
+    self.ws = await asyncio.wait_for(coro, timeout=180.0)
+  File "/usr/lib/python3.8/asyncio/tasks.py", line 490, in wait_for
+    raise exceptions.TimeoutError()
+asyncio.exceptions.TimeoutError
+2020-09-26 06:20:24,046:ERROR:discord.client: Attempting a reconnect in 3.01s
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/client.py", line 499, in connect
+    await self._connect()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/client.py", line 460, in _connect
+    self.ws = await asyncio.wait_for(coro, timeout=180.0)
+  File "/usr/lib/python3.8/asyncio/tasks.py", line 490, in wait_for
+    raise exceptions.TimeoutError()
+asyncio.exceptions.TimeoutError
+2020-09-26 07:57:29,377:WARNING:discord.gateway: Shard ID None has stopped responding to the gateway. Closing and restarting.
+2020-09-26 08:38:29,486:WARNING:discord.gateway: Shard ID None has stopped responding to the gateway. Closing and restarting.
+2020-09-26 18:30:53,897:WARNING:discord.gateway: Shard ID None has stopped responding to the gateway. Closing and restarting.
+2020-09-26 19:28:45,784:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-26 19:30:11,940:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-26 19:32:24,959:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-26 19:40:02,670:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-26 19:42:12,524:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-26 19:43:15,820:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-26 19:45:16,226:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-26 19:47:40,772:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-26 19:50:01,965:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-26 19:53:10,643:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-26 20:02:57,472:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-26 20:03:22,994:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-26 20:06:53,383:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-26 20:07:18,964:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-26 22:00:52,127:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-27 07:56:25,328:WARNING:discord.gateway: Shard ID None has stopped responding to the gateway. Closing and restarting.
+2020-09-27 15:43:35,352:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-27 15:43:43,522:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-27 16:22:56,270:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-27 17:01:49,207:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-27 17:04:57,361:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-27 17:13:39,613:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-27 18:07:49,394:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-27 18:08:56,975:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-27 18:09:44,276:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-27 18:19:26,317:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-27 18:24:32,406:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-27 18:29:51,320:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-27 18:33:51,473:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
