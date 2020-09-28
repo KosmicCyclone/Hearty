@@ -1,0 +1,83 @@
+{
+  "1": {
+    "Name": "Jigsaw Puzzle",
+    "Description": "Most crafts interlocking to form a larger craft.",
+    "Requirements": "Each Craft must have a use. You are not required to travel to any planet yet due to the Spinning Glitch and other related glitches. Requires a screenshot.",
+    "Record Holder": "<@!277614624466141187> and <@!712735641489637487>",
+    "Date": "September 22, 2020",
+    "Record": "2 Crafts",
+    "Proof": "https://media.discordapp.net/attachments/757978804764409916/757981837384483026/H9ajkVEK8B8PAAAAABJRU5ErkJggg.png"
+  },
+  "2": {
+    "Name": "Passenger Shuttle",
+    "Description": "Most Crafts fully enclosed in a single craft.",
+    "Requirements": "Each player must be controlled by a different person. You must carry the crafts to Mars and back. Requires a video.",
+    "Record Holder": "None",
+    "Date": "N/A",
+    "Record": "N/A",
+    "Proof": "N/A"
+  },
+  "3": {
+    "Name": "The Tri-Planetary Time Trial",
+    "Description": "Fastest time from Earth, To Mars, To Mercury, and back to Earth.",
+    "Requirements": "Must touchdown on each planet. Requires a video.",
+    "Record Holder": "None",
+    "Date": "N/A",
+    "Record": "N/A",
+    "Proof": "N/A"
+  },
+  "4": {
+    "Name": "Satellite",
+    "Description": "Most Orbits around Earth.",
+    "Requirements": "You are not allowed to perform any orbital maneuvers once you reach orbit. Requires a video.",
+    "Record Holder": "<@!277614624466141187>",
+    "Date": "September 22, 2020",
+    "Record": "10",
+    "Proof": "Witness"
+  },
+  "5": {
+    "Name": "Small Boi Speedrun",
+    "Description": "Build this ship legitimately in the shortest amount of time:\n:LandingThruster::SolarPanel::LandingThruster:\n:Hub::Hearty::Hub:\n:LandingThruster::SolarPanel::LandingThruster:",
+    "Requirements": "You must aquire all parts on your own, and cannot have any assistance. Requires a video.",
+    "Record Holder": "<@!655915654909657112>",
+    "Date": "September 22, 2020",
+    "Record": "7:21",
+    "Proof": "https://youtu.be/n4qyKNR37PU"
+  },
+  "6": {
+    "Name": "Small Moon",
+    "Description": "Have the most parts on your craft.",
+    "Requirements": "Requires a screenshot.",
+    "Record Holder": "<@!606259433487728659> and <@!545228147843399691>",
+    "Date": "September 22, 2020",
+    "Record": "260",
+    "Proof": "https://media.discordapp.net/attachments/757978804764409916/758128121420578856/443eb3aa652aa54cc3d9e6a153723652.png"
+  },
+  "7": {
+    "Name": "Blockade",
+    "Description": "Largest celestial body fully enclosed by a single craft. In the event that largest celestial body has been enclosed, the record will be held by whoever's craft has the most complete layers around the planet (layers are the craft's height).",
+    "Requirements": "Requires a screenshot with the entire craft visible.",
+    "Record Holder": "<@!606259433487728659> and <@!545228147843399691>",
+    "Date": "September 22, 2020",
+    "Record": "Earth, One Layer",
+    "Proof": "https://media.discordapp.net/attachments/757978804764409916/758128941277249616/443eb3aa652aa54cc3d9e6a153723652.png"
+  },
+  "8": {
+    "Name": "I am Speed",
+    "Description": "Highest velocity relative to Earth.",
+    "Requirements": "Requires a screenshot.",
+    "Record Holder": "<@!606259433487728659>",
+    "Date": "September 22, 2020",
+    "Record": "2710",
+    "Proof": "https://media.discordapp.net/attachments/757978804764409916/758130204018343956/942094ebc8e20ff39f8a78468d11bb6a.png"
+  },
+  "9": {
+    "Name": "Voyager",
+    "Description": "Farthest position relative to Earth.",
+    "Requirements": "Requires a screenshot.",
+    "Record Holder": "<@!274284865770225674>",
+    "Date": "September 14, 2020",
+    "Record": "22626680",
+    "Proof": "https://media.discordapp.net/attachments/757978804764409916/758168311724113940/unknown.png"
+  }
+}

@@ -7,13 +7,20 @@ class Utilities(commands.Cog):
         self.bot = bot
     
     #Game link command
-    @commands.command(aliases=['game','gamelink'])
-    async def glap(self,ctx):
+    @commands.command(aliases=['gamelink'])
+    async def link(self,ctx):
       embed=discord.Embed(description="[Click here to play Glap.RS!](https://www.glap.rs/)",color=0xe5d315)
       await ctx.send(embed=embed)
 
-
-
+    #Source code command
+    @commands.command(aliases=['sc','sourcecodes','code'])
+    async def sourcecode(self,ctx):
+      embed=discord.Embed(title="Here are the links to the various source codes!", color=0x0a81ff)
+      embed.add_field(name="Glap.RS", value="[Glap.RS Server](https://github.com/christian7573/glap-rs-server)", inline=False)
+      embed.add_field(name="Glap.RS", value="[Glap.RS Client](https://github.com/christian7573/glap-rs-client)", inline=False)
+      embed.add_field(name="Hearty", value="[Hearty Source Code](https://github.com/KosmicCyclone/Hearty)", inline=False)
+      await ctx.send(embed=embed)
+      
     #bug report command
     @commands.command()
     async def bug(self, ctx, *, report=None):

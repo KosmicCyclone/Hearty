@@ -24,7 +24,6 @@ logger.addHandler(handler)
 
 bot = commands.Bot(command_prefix="h!")
 
-
 with open('statuses.json', "r+") as s:
     statuses = json.load(s)
     random.shuffle(statuses)
@@ -61,7 +60,7 @@ async def change_status():
 
 
 #Change Avatar Loop
-@tasks.loop(minutes=30)
+@tasks.loop(minutes=60)
 async def change_avatar():
     async with aiohttp.ClientSession() as session:
         async with session.get(next(avatar)) as resp:
@@ -69,14 +68,15 @@ async def change_avatar():
             image = buffer.read()
             await bot.user.edit(avatar=image)
 
+
 #Store Uptime Loop
 @tasks.loop(seconds=5)
 async def store_uptime():
     with open('uptime.json', 'r+') as u:
-      UptimeDict = json.load(u)
-      UptimeDict['TotalUptime'] = UptimeDict['TotalUptime'] + 5
-      u.seek(0)
-      u.write(json.dumps(UptimeDict))
+        UptimeDict = json.load(u)
+        UptimeDict['TotalUptime'] = UptimeDict['TotalUptime'] + 5
+        u.seek(0)
+        u.write(json.dumps(UptimeDict))
 
 
 for filename in os.listdir('./modules'):
