@@ -155,3 +155,195 @@ asyncio.exceptions.TimeoutError
 2020-09-27 18:24:32,406:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
 2020-09-27 18:29:51,320:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
 2020-09-27 18:33:51,473:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-27 19:38:36,474:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-27 19:39:35,677:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-27 20:16:25,480:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-27 20:17:12,588:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-27 20:49:37,905:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-27 20:57:04,573:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-27 21:05:19,573:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-27 21:34:57,068:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-27 22:44:50,407:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-27 22:45:38,703:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-27 22:55:56,272:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-27 23:12:20,482:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-27 23:13:04,093:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-27 23:13:51,487:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-27 23:16:21,492:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-27 23:16:22,006:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-27 23:17:08,101:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-27 23:21:43,768:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-28 13:18:40,389:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-28 13:18:40,893:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-28 14:06:15,858:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-28 14:06:16,294:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-28 14:06:42,098:ERROR:discord.ext.tasks: Internal background task failed.
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/tasks/__init__.py", line 73, in _loop
+    await self.coro(*args, **kwargs)
+  File "main.py", line 53, in change_status
+    await bot.change_presence(activity=discord.Game(next(status)))
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/client.py", line 943, in change_presence
+    await self.ws.change_presence(activity=activity, status=status, afk=afk)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/gateway.py", line 512, in change_presence
+    await self.send(sent)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/gateway.py", line 482, in send
+    await super().send(data)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/websockets/protocol.py", line 555, in send
+    await self.ensure_open()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/websockets/protocol.py", line 803, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedError: code = 4008 (private use), reason = Rate limited.
+2020-09-28 14:06:44,151:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-28 14:06:44,598:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-28 14:35:37,015:WARNING:discord.gateway: Shard ID None has stopped responding to the gateway. Closing and restarting.
+2020-09-28 15:27:49,269:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-28 15:27:49,720:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-28 15:28:32,496:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-28 15:28:33,072:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-28 15:29:29,097:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-28 15:29:29,596:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-28 15:33:08,199:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-28 15:33:50,808:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-28 15:44:06,107:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-28 15:44:06,640:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-28 15:51:36,269:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-28 15:51:36,751:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-28 15:52:30,083:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-28 15:52:30,722:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-28 15:54:21,789:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-28 15:54:22,279:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-28 15:58:33,040:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-28 16:11:07,027:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-28 16:11:07,880:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-28 16:23:00,330:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-28 16:23:00,938:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-28 16:23:34,422:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-28 16:23:34,908:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-28 16:23:36,914:ERROR:discord.ext.tasks: Internal background task failed.
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/tasks/__init__.py", line 73, in _loop
+    await self.coro(*args, **kwargs)
+  File "main.py", line 77, in store_uptime
+    UptimeDict = cycle(json.load(u))
+  File "/usr/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.8/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 4 column 1 (char 65)
+2020-09-28 16:24:17,785:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-28 16:24:18,357:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-28 16:24:20,366:ERROR:discord.ext.tasks: Internal background task failed.
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/tasks/__init__.py", line 73, in _loop
+    await self.coro(*args, **kwargs)
+  File "main.py", line 77, in store_uptime
+    UptimeDict = cycle(json.load(u))
+  File "/usr/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.8/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 4 column 1 (char 65)
+2020-09-28 16:24:54,751:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-28 16:24:57,267:ERROR:discord.ext.tasks: Internal background task failed.
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/tasks/__init__.py", line 73, in _loop
+    await self.coro(*args, **kwargs)
+  File "main.py", line 78, in store_uptime
+    UptimeDict = cycle(json.load(u))
+  File "/usr/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.8/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 4 column 1 (char 65)
+2020-09-28 16:26:46,857:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-28 16:26:49,400:ERROR:discord.ext.tasks: Internal background task failed.
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/tasks/__init__.py", line 73, in _loop
+    await self.coro(*args, **kwargs)
+  File "main.py", line 78, in store_uptime
+    UptimeDict = json.load(u)
+  File "/usr/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.8/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 4 column 1 (char 65)
+2020-09-28 16:34:01,550:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-28 16:34:12,592:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-28 16:34:13,095:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-28 16:50:52,168:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-28 16:50:52,588:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-28 16:50:54,596:ERROR:discord.ext.tasks: Internal background task failed.
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/tasks/__init__.py", line 73, in _loop
+    await self.coro(*args, **kwargs)
+  File "main.py", line 78, in store_uptime
+    UptimeDict = json.load(u)
+  File "/usr/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.8/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 4 column 1 (char 61)
+2020-09-28 16:55:57,051:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-28 16:55:57,508:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-28 16:56:04,526:ERROR:discord.ext.tasks: Internal background task failed.
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/tasks/__init__.py", line 73, in _loop
+    await self.coro(*args, **kwargs)
+  File "main.py", line 78, in store_uptime
+    UptimeDict = json.load(u)
+  File "/usr/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.8/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 46 (char 45)
+2020-09-28 16:56:14,269:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-28 16:56:15,213:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-28 17:09:11,588:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-28 17:09:33,894:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-28 17:09:34,449:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-28 17:14:56,054:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-28 17:14:56,570:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-28 17:15:08,584:ERROR:discord.ext.tasks: Internal background task failed.
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/tasks/__init__.py", line 73, in _loop
+    await self.coro(*args, **kwargs)
+  File "main.py", line 77, in store_uptime
+    UptimeDict = json.load(u)
+  File "/usr/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 17 (char 16)
+2020-09-28 17:15:23,716:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-28 17:28:27,971:WARNING:discord.gateway: Shard ID None has stopped responding to the gateway. Closing and restarting.
+2020-09-28 17:38:04,763:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-28 17:38:05,517:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-28 17:39:02,065:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2020-09-28 17:39:02,603:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.

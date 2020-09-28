@@ -5,22 +5,32 @@ from discord.ext import commands
 class Utilities(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
+    
+    #Game link command
+    @commands.command(aliases=['game','gamelink'])
+    async def glap(self,ctx):
+      embed=discord.Embed(description="[Click here to play Glap.RS!](https://www.glap.rs/)",color=0xe5d315)
+      await ctx.send(embed=embed)
+
+
 
     #bug report command
     @commands.command()
-    async def bug(self, ctx, report=None, image=None):
+    async def bug(self, ctx, *, report=None):
         if report == None:
             await ctx.send(
-                'Please provide a helpful description of the bug. Feel free to attach an image.'
+                'Please provide a helpful description of the bug. Feel free to attach an image.', delete_after=10
             )
             return
+        channel = self.bot.get_channel(749806907857961060)
         if ctx.message.attachments:
             file = ctx.message.attachments[0]
             file.filename = f'{file.filename}'
             image = await file.to_file()
-        channel = self.bot.get_channel(749806907857961060)
-        bug: discord.Message = await channel.send(
-            content=f'{report}', file=image)
+            bug: discord.Message = await channel.send(
+                content=f'{report}', file=image)
+        else:
+            bug: discord.Message = await channel.send(content=f'{report}')
         await bug.add_reaction('✅')
         await bug.add_reaction('❌')
         await ctx.send(
@@ -28,10 +38,10 @@ class Utilities(commands.Cog):
 
     #feature request command
     @commands.command(aliases=['idea', 'request'])
-    async def feature(self, ctx, idea=None):
+    async def feature(self, ctx, *, idea=None):
         if idea == None:
             await ctx.send(
-                'Please provide a good description of your feature idea.')
+                'Please provide a good description of your feature idea.', delete_after=10)
             return
         channel = self.bot.get_channel(750144643471245312)
         feature: discord.Message = await channel.send(content=f'{idea}')
