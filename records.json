@@ -21,10 +21,10 @@
     "Name": "The Tri-Planetary Time Trial",
     "Description": "Fastest time from Earth, To Mars, To Mercury, and back to Earth.",
     "Requirements": "Must touchdown on each planet. Requires a video.",
-    "Record Holder": "None",
-    "Date": "N/A",
-    "Record": "N/A",
-    "Proof": "N/A"
+    "Record Holder": "<@!552663802920042496>",
+    "Date": "October 4, 2020",
+    "Record": "4:12.29",
+    "Proof": "https://drive.google.com/file/d/1L6wDd8AsejUJkjqlYlNmoaEv8xU_R7ml/view?usp=sharing"
   },
   "4": {
     "Name": "Satellite",
@@ -37,7 +37,7 @@
   },
   "5": {
     "Name": "Small Boi Speedrun",
-    "Description": "Build this ship legitimately in the shortest amount of time:\n:LandingThruster::SolarPanel::LandingThruster:\n:Hub::Hearty::Hub:\n:LandingThruster::SolarPanel::LandingThruster:",
+    "Description": "Build this ship legitimately in the shortest amount of time:\n<:LandingThruster:750741607560511559><:SolarPanel:751942875226308638><:LandingThruster:750741607560511559>\n<:Hub:750735364993581107><:Hearty:750735391904235674><:Hub:750735364993581107>\n<:LandingThruster:750741607560511559><:SolarPanel:751942875226308638><:LandingThruster:750741607560511559>",
     "Requirements": "You must aquire all parts on your own, and cannot have any assistance. Requires a video.",
     "Record Holder": "<@!655915654909657112>",
     "Date": "September 22, 2020",
@@ -47,11 +47,11 @@
   "6": {
     "Name": "Small Moon",
     "Description": "Have the most parts on your craft.",
-    "Requirements": "Requires a screenshot.",
-    "Record Holder": "<@!606259433487728659> and <@!545228147843399691>",
-    "Date": "September 22, 2020",
-    "Record": "260",
-    "Proof": "https://media.discordapp.net/attachments/757978804764409916/758128121420578856/443eb3aa652aa54cc3d9e6a153723652.png"
+    "Requirements": "Requires a screenshot. You can not use an alt account.",
+    "Record Holder": "<@!594650481964351509>",
+    "Date": "October 5, 2020",
+    "Record": "482",
+    "Proof": "https://media.discordapp.net/attachments/753727325883072592/762687778525544498/Screen_Shot_2020-10-05_at_7.37.02_AM.png"
   },
   "7": {
     "Name": "Blockade",
@@ -66,18 +66,18 @@
     "Name": "I am Speed",
     "Description": "Highest velocity relative to Earth.",
     "Requirements": "Requires a screenshot.",
-    "Record Holder": "<@!606259433487728659>",
-    "Date": "September 22, 2020",
-    "Record": "2710",
-    "Proof": "https://media.discordapp.net/attachments/757978804764409916/758130204018343956/942094ebc8e20ff39f8a78468d11bb6a.png"
+    "Record Holder": "<@!363690744000675841>",
+    "Date": "October 6, 2020",
+    "Record": "7802",
+    "Proof": "https://media.discordapp.net/attachments/523502748348579869/762308256982368306/unknown.png?width=622&height=401"
   },
   "9": {
     "Name": "Voyager",
     "Description": "Farthest position relative to Earth.",
     "Requirements": "Requires a screenshot.",
-    "Record Holder": "<@!274284865770225674>",
-    "Date": "September 14, 2020",
-    "Record": "22626680",
-    "Proof": "https://media.discordapp.net/attachments/757978804764409916/758168311724113940/unknown.png"
+    "Record Holder": "<@!363690744000675841>",
+    "Date": "October 6, 2020",
+    "Record": "91946318",
+    "Proof": "https://media.discordapp.net/attachments/523502748348579869/762308256982368306/unknown.png?width=622&height=401"
   }
 }

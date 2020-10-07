@@ -17,3 +17,116 @@
 2020-09-28 20:57:21,988:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
 2020-09-28 21:05:42,069:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
 2020-09-28 21:10:50,232:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-28 21:32:26,160:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-28 21:42:22,502:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-28 21:44:45,916:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-28 21:45:04,813:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-28 21:45:19,299:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-28 21:45:26,309:ERROR:discord.ext.tasks: Internal background task failed.
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/tasks/__init__.py", line 73, in _loop
+    await self.coro(*args, **kwargs)
+  File "main.py", line 77, in store_uptime
+    UptimeDict = json.load(u)
+  File "/usr/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.8/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 54 (char 53)
+2020-09-28 21:45:52,710:ERROR:discord.ext.tasks: Internal background task failed.
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/tasks/__init__.py", line 73, in _loop
+    await self.coro(*args, **kwargs)
+  File "main.py", line 77, in store_uptime
+    UptimeDict = json.load(u)
+  File "/usr/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.8/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 53 (char 52)
+2020-09-28 21:58:11,209:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-29 11:31:19,544:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-29 13:08:53,757:WARNING:discord.gateway: Shard ID None has stopped responding to the gateway. Closing and restarting.
+2020-09-29 13:16:14,185:WARNING:discord.gateway: Shard ID None has stopped responding to the gateway. Closing and restarting.
+2020-09-29 13:36:59,917:WARNING:discord.gateway: Shard ID None has stopped responding to the gateway. Closing and restarting.
+2020-09-29 16:04:29,228:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-29 16:07:49,733:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-29 16:08:38,467:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-29 16:24:29,557:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-29 16:32:47,338:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-29 16:40:20,356:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-29 17:08:46,192:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-29 17:14:49,214:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-29 17:23:09,790:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-29 17:32:14,632:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-29 17:33:10,004:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-29 17:34:07,878:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-29 17:42:57,499:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-29 17:56:13,164:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-29 17:58:47,342:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-29 18:56:36,195:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-30 14:09:20,017:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-09-30 15:16:04,505:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-10-02 14:12:17,539:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-10-02 15:10:49,635:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-10-02 15:25:21,245:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-10-04 00:20:22,371:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-10-04 14:44:51,288:WARNING:discord.http: We are being rate limited. Retrying in 2.12 seconds. Handled under the bucket "750144643471245312:None:/channels/{channel_id}/messages/{message_id}"
+2020-10-04 16:33:28,850:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-10-04 17:02:24,992:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-10-04 17:41:46,594:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-10-04 17:42:14,638:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-10-04 17:43:12,260:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-10-04 17:53:10,502:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-10-04 18:58:42,488:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-10-04 21:02:58,562:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-10-05 08:01:14,623:WARNING:discord.gateway: Shard ID None has stopped responding to the gateway. Closing and restarting.
+2020-10-05 08:23:25,046:WARNING:discord.gateway: Shard ID None has stopped responding to the gateway. Closing and restarting.
+2020-10-05 09:39:04,649:WARNING:discord.gateway: Shard ID None has stopped responding to the gateway. Closing and restarting.
+2020-10-05 10:21:01,586:WARNING:discord.gateway: Shard ID None has stopped responding to the gateway. Closing and restarting.
+2020-10-05 11:39:05,282:WARNING:discord.gateway: Shard ID None has stopped responding to the gateway. Closing and restarting.
+2020-10-05 13:16:19,825:WARNING:discord.gateway: Shard ID None has stopped responding to the gateway. Closing and restarting.
+2020-10-05 13:31:36,925:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-10-05 13:38:34,224:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-10-05 13:39:30,047:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-10-05 13:42:57,997:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-10-05 13:43:00,000:ERROR:discord.ext.tasks: Internal background task failed.
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/tasks/__init__.py", line 73, in _loop
+    await self.coro(*args, **kwargs)
+  File "main.py", line 72, in change_activity
+    status=bot.status, activity=discord.Game(bot.ThisActivity))
+AttributeError: 'Bot' object has no attribute 'status'
+2020-10-05 13:44:04,039:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-10-05 13:44:06,043:ERROR:discord.ext.tasks: Internal background task failed.
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/tasks/__init__.py", line 73, in _loop
+    await self.coro(*args, **kwargs)
+  File "main.py", line 72, in change_activity
+    status=bot.status, activity=discord.Game(bot.ThisActivity))
+AttributeError: 'Bot' object has no attribute 'status'
+2020-10-05 13:44:35,439:ERROR:discord.ext.tasks: Internal background task failed.
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/tasks/__init__.py", line 73, in _loop
+    await self.coro(*args, **kwargs)
+  File "main.py", line 72, in change_activity
+    status=bot.status, activity=discord.Game(bot.ThisActivity))
+AttributeError: 'Bot' object has no attribute 'status'
+2020-10-05 13:58:33,398:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-10-05 13:58:35,400:ERROR:discord.ext.tasks: Internal background task failed.
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/discord/ext/tasks/__init__.py", line 73, in _loop
+    await self.coro(*args, **kwargs)
+  File "main.py", line 65, in change_activity
+    LastInteracted = int(round(time.time() - bot.InteractedTime))
+AttributeError: 'Bot' object has no attribute 'InteractedTime'
+2020-10-05 13:59:48,261:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-10-05 14:02:53,811:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-10-05 14:04:28,203:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.
+2020-10-05 14:17:42,640:WARNING:discord.state: GUILD_MEMBER_UPDATE referencing an unknown member ID: 759034622432247808. Discarding.

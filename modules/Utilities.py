@@ -5,29 +5,66 @@ from discord.ext import commands
 class Utilities(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
+
+    @commands.command(aliases=['sm'],brief='Sets a custom slowmode for a channel')
+    @commands.has_permissions(manage_channels=True)
+    async def slowmode(self, ctx, seconds: int = None):
+        if seconds == None:
+            await ctx.channel.edit(slowmode_delay=0)
+            await ctx.send(f'Ok! I disabled slowmode in this channel.')
+            return
+        await ctx.channel.edit(slowmode_delay=seconds)
+        await ctx.send(f'Ok! I set the slowmode in this channel to {seconds} seconds.')
     
+    #For Godly Apples
+    @commands.command(aliases=['commitdie'],brief='A command built for sadists',description='A command built for sadists')
+    async def die(self, ctx):
+        await ctx.send('That sounds painful...<:Worry:749016905708208208>')
+
     #Game link command
-    @commands.command(aliases=['gamelink'])
-    async def link(self,ctx):
-      embed=discord.Embed(description="[Click here to play Glap.RS!](https://www.glap.rs/)",color=0xe5d315)
-      await ctx.send(embed=embed)
+    @commands.command(aliases=['gamelink'],brief='A link to Glap.RS',description='A link to Glap.RS')
+    async def link(self, ctx):
+        embed = discord.Embed(
+            description="[Click here to play Glap.RS!](https://www.glap.rs/)",
+            color=0xe5d315)
+        await ctx.send(embed=embed)
 
     #Source code command
-    @commands.command(aliases=['sc','sourcecodes','code'])
-    async def sourcecode(self,ctx):
-      embed=discord.Embed(title="Here are the links to the various source codes!", color=0x0a81ff)
-      embed.add_field(name="Glap.RS", value="[Glap.RS Server](https://github.com/christian7573/glap-rs-server)", inline=False)
-      embed.add_field(name="Glap.RS", value="[Glap.RS Client](https://github.com/christian7573/glap-rs-client)", inline=False)
-      embed.add_field(name="Hearty", value="[Hearty Source Code](https://github.com/KosmicCyclone/Hearty)", inline=False)
-      await ctx.send(embed=embed)
-      
+    @commands.command(aliases=['sc', 'sourcecodes', 'code'],brief='Links to the various source codes',description='Links to the sourcecodesfor Glap.RS and Hearty')
+    async def sourcecode(self, ctx):
+        embed = discord.Embed(
+            title="Here are the links to the various source codes!",
+            color=0x0a81ff)
+        embed.add_field(
+            name="Glap.RS",
+            value=
+            "[Glap.RS Server](https://github.com/christian7573/glap-rs-server)",
+            inline=False)
+        embed.add_field(
+            name="Glap.RS",
+            value=
+            "[Glap.RS Client](https://github.com/christian7573/glap-rs-client)",
+            inline=False)
+        embed.add_field(
+            name="Hearty",
+            value=
+            "[Hearty Source Code](https://github.com/KosmicCyclone/Hearty)",
+            inline=False)
+        await ctx.send(embed=embed)
+
     #bug report command
-    @commands.command()
+    @commands.command(aliases=['bugreport'],brief='A command to report a bug',description='Report a bug in Glap.RS')
     async def bug(self, ctx, *, report=None):
+        guild = ctx.guild
+        if not guild.get_role(763501096604794890) in ctx.author.roles:
+          await ctx.send(
+                'You must be at least level 3 to use this command.',
+                delete_after=10)
+          return
         if report == None:
             await ctx.send(
-                'Please provide a helpful description of the bug. Feel free to attach an image.', delete_after=10
-            )
+                'Please provide a helpful description of the bug. Feel free to attach an image.',
+                delete_after=10)
             return
         channel = self.bot.get_channel(749806907857961060)
         if ctx.message.attachments:
@@ -44,11 +81,18 @@ class Utilities(commands.Cog):
             'Thank you! Your bug has been submitted for confirmation.')
 
     #feature request command
-    @commands.command(aliases=['idea', 'request'])
+    @commands.command(aliases=['idea', 'request','featurerequest'],brief='A command to request a feature',description='Request a feature to be added to Glap.RS')
     async def feature(self, ctx, *, idea=None):
+        guild = ctx.guild
+        if not guild.get_role(763501096604794890) in ctx.author.roles:
+          await ctx.send(
+                'You must be at least level 3 to use this command.',
+                delete_after=10)
+          return
         if idea == None:
             await ctx.send(
-                'Please provide a good description of your feature idea.', delete_after=10)
+                'Please provide a good description of your feature idea.',
+                delete_after=10)
             return
         channel = self.bot.get_channel(750144643471245312)
         feature: discord.Message = await channel.send(content=f'{idea}')
